@@ -59,7 +59,7 @@ export class AppComponent {
   private _update_active_fragment(event: any) {
     event.preventDefault();
     let top = window.pageYOffset;
-    let bottom = window.pageYOffset + window.innerHeight - 50;
+    // let bottom = window.pageYOffset + window.innerHeight - 50;
 
     if (top >= 50) {
       this.navbar?.nativeElement.classList.add('scroll-header');
