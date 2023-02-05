@@ -1,7 +1,17 @@
-import { platformBrowserDynamic } from '@angular/platform-browser-dynamic';
+import { enableProdMode, importProvidersFrom } from "@angular/core";
+import { bootstrapApplication } from "@angular/platform-browser";
+import { AppComponent } from "./app/app.component";
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { RouterModule, Routes } from '@angular/router';
+import { APP_ROUTES } from './app/app-routing';
 
-import { AppModule } from './app/app.module';
+export const routes: Routes = [];
 
-
-platformBrowserDynamic().bootstrapModule(AppModule)
-  .catch(err => console.error(err));
+bootstrapApplication(AppComponent,{
+  providers:[
+    importProvidersFrom(BrowserAnimationsModule),
+    importProvidersFrom(RouterModule.forRoot(routes,{
+      anchorScrolling: 'enabled'
+    })),
+  ]
+})
