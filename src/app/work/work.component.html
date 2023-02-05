@@ -1,0 +1,80 @@
+<section id="work">
+    <div class="container">
+        <h1 class="section-heading">Where I've Worked</h1>
+        <div class="job-table">
+            <div class="job-list">
+                <button [ngClass]="{'work-active':selectedCompany == company.id}" *ngFor="let company of companyDetails" (click)="selectedCompany = company.id">
+                    <span>
+                        {{company.name}}
+                    </span>
+                </button>
+            </div>
+            <div class="job-panel">
+                <div *ngFor="let company of companyDetails">
+                    <div *ngIf="selectedCompany == company.id">
+                        <h3>
+                            <span>
+                                {{company.position}}
+                            </span>
+                            <span class="theme-text">
+                                @ {{company.name}}
+                            </span>
+                        </h3>
+                        <p>
+                            {{company.duration}}
+                        </p>
+                        <div>
+                            <ul>
+                                <li *ngFor="let item of company.description">
+                                    {{item}}
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="jobCarousel" class="carousel slide carousel-dark display" data-interval="false" data-bs-touch="true">
+            <div class="carousel-indicators">
+                <button *ngFor="let company of companyDetails; let i = index; first as isFirst" [ngClass]="isFirst ? 'active' : '' " type="button" data-bs-target="#jobCarousel" [attr.data-bs-slide-to]="i"  aria-current="true" [attr.aria-label]="i"></button>
+              </div>
+            <div class="carousel-inner">
+                <div *ngFor="let company of companyDetails; first as isFirst">
+                    <div  [ngClass]="isFirst ? 'carousel-item active' : 'carousel-item' " >
+                        <div class="d-block card">
+                            <h3>
+                                <span>
+                                    {{company.position}}
+                                </span>
+                                <span class="theme-text">
+                                    @ {{company.name}}
+                                </span>
+                            </h3>
+                            <p>
+                                {{company.duration}}
+                            </p>
+                            <div>
+                                <ul>
+                                    <li *ngFor="let item of company.description">
+                                        {{item}}
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- <button class="carousel-control-prev" type="button" data-bs-target="#jobCarousel"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#jobCarousel"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button> -->
+        </div>
+    </div>
+</section>
+
