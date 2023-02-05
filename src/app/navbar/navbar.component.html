@@ -10,8 +10,8 @@
         <div class="collapse navbar-collapse main-menu d-lg-flex justify-content-lg-end" id="navbarSupportedContent">
             <ul class="navbar-nav">
                 <li class="nav-item" *ngFor="let route of routeLinks">
-                    <a data-scroll-nav="2" [ngClass]="{ 'active-link': (active_fragment) === route.link }"
-                        class="nav-link" href="#{{route.link}}">
+                    <a data-toggle="collapse" data-target=".in" data-scroll-nav="2" [ngClass]="{ 'active-link': (active_fragment) === route.link }"
+                        class="nav-link"  href="#{{route.link}}">
                         <span>{{ route.name }}</span>
                     </a>
                 </li>

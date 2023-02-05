@@ -27,7 +27,7 @@ export class WorkComponent {
     {
       id: '2',
       name: 'SAC, ISRO',
-      position: 'Research and Development Inter',
+      position: 'Research and Development Intern',
       duration: 'December 2021- March 2022',
       description: [
         "Built a Python desktop application for Optimization of the Optimum Interpolation code used for generating merged Sea surface temperature and visualisation of the output.",

@@ -32,9 +32,11 @@
 .navbar-collapse.in {
     display: flex !important;
 }
+.collapsing{
+    transition: height 0.05s ease-in-out;
+}
 
-@media(max-width: 900px) {
-
+@media (max-width : 992px) {
     .main-menu {
         background-color: var(--px-gray-2);
         border-top: 1px solid var(--px-border);
@@ -45,4 +47,15 @@
         right: 0;
         border-bottom: 1px solid var(--px-border);
     }
+
+}
+
+@media (min-width : 992px) {
+    .main-menu {
+        background-color: transparent;
+        border: 0;
+        padding: 0;
+        position: relative;
+    }
+
 }

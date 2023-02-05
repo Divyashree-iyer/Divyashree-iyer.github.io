@@ -31,8 +31,10 @@ export const routes: Routes = [];
 })
 export class NavbarComponent {
 
-  @Input() isExpanded?: boolean;
-  @Output() toggleMenu = new EventEmitter();
+  // @Input() isExpanded?: boolean;
+  // @Output() toggleMenu = new EventEmitter();
+
+  isMenuCollapsed=true;
 
   public routeLinks = [
     { link: "about", name: "About" },

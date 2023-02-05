@@ -30,11 +30,11 @@ import { WorkComponent } from './work/work.component';
 export class AppComponent {
   title = 'portfolio';
 
-  public isExpanded = false;
+  // public isExpanded = false;
 
-  public toggleMenu() {
-    this.isExpanded = !this.isExpanded;
-  }
+  // public toggleMenu() {
+  //   this.isExpanded = !this.isExpanded;
+  // }
   //use this method to scroll to bottom i.e. footer with links
   scrollToElement($element: any): void {
     console.log($element);
