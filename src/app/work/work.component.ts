@@ -13,9 +13,21 @@ export class WorkComponent {
     companyDetails = [
     {
       id: '1',
+      name: 'Arizona State University',
+      position: 'Teaching Assistant',
+      duration: 'August 2023 - May 2025',
+      description: [
+        "Led lab sessions and guided over 100 students in mastering core programming concepts in C++ and Java.",
+        "Built an automated grading tool to evaluate code submissions for correctness and efficiency, significantly reducing grading time and improving feedback consistency.",
+        "Designed hands-on assignments, quizzes, and review sessions in collaboration with faculty to deepen student understanding of the subject."
+      ],
+      certificate:""
+    },
+    {
+      id: '2',
       name: 'Matchbook AI',
       position: 'Angular Developer',
-      duration: 'June 2022 - Present',
+      duration: 'June 2022 - July 2023',
       description: [
         "Responsible for building modular, testable and reusable frontend modules for SPA using Angular 15.",
         "Designing, Implementing, unit testing and using Git Version Control.",
@@ -25,7 +37,7 @@ export class WorkComponent {
       certificate:""
     },
     {
-      id: '2',
+      id: '3',
       name: 'SAC, ISRO',
       position: 'Research and Development Intern',
       duration: 'December 2021- March 2022',
@@ -38,7 +50,7 @@ export class WorkComponent {
       certificate:""
     },
     {
-      id: '3',
+      id: '4',
       name: 'SAC, ISRO',
       position: 'Software Inter',
       duration: 'June 2021- August 2021',

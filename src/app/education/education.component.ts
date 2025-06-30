@@ -16,23 +16,30 @@ export class EducationComponent {
 
   educationDetails = [
     {
+      duration: 'August 2023 - May 2025',
+      name: 'Arizona State University',
+      location: 'AZ, USA',
+      degree: 'Master of Computer Science',
+      marks: '3.67/4.0'
+    },
+    {
       duration: 'July 2018 - May 2022',
       name: 'Dharmsinh Desai University',
-      city: 'Nadiad',
-      degree: 'Bachelor of Technology in Information Technology ',
-      marks: '8.26/10'
+      location: 'India',
+      degree: 'Bachelor of Technology in Information Technology',
+      marks: '3.28/4.0'
     },
     {
       duration: 'March, 2018',
       name: 'Sri Sri Ravishankar Vidya Mandir',
-      city: 'Ahmedabad',
-      degree: 'Higher Secondary School, Science, CBSE ',
+      location: 'India',
+      degree: 'Higher Secondary School, Science, CBSE',
       marks: '89.66% (PCM)'
     },
     {
       duration: 'March, 2016',
       name: 'Sri Sri Ravishankar Vidya Mandir',
-      city: 'Ahmedabad',
+      location: 'India',
       degree: 'Secondary School Certificate, CBSE',
       marks: '9.8 CGPA'
     },

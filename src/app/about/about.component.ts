@@ -11,8 +11,8 @@ import { CommonModule } from '@angular/common';
 export class AboutComponent {
 
   aboutContent = [
-    "I am passionate Full-stack developer with experience in building responsive websites with a knack for problem solving. I seek challenging work opportunities that allows me to continue learning and developing alongside a team of some of the best professionals in the field.",
-    "My main focus these days is building a modular angular product for compliance and data stewardship at Matchbook AI.",
-    "Apart from that, I like to spend most of my time with competitive programming and problem-solving. Moreover, I love creating beautiful web interfaces that can interact with the backend and database."
+    "I am passionate Full-stack developer with experience in building responsive websites with a knack for problem solving. I thrive in fast-paced environments and enjoy working on projects that push me to grow and learn continuously.",
+    "I am a recent Computer Science gradute from ASU, Go Sundevils! I have built cloud-native apps using AWS, worked on LLM bots, researched at ISRO and built intuitive UIs.",
+    "Apart from that, I like to spend most of my time with competitive programming, problem-solving and experimenting with ML models."
   ]
 }

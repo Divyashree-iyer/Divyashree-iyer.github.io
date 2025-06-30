@@ -13,6 +13,6 @@ export class HomeComponent {
   homeIntro = "Hi, my name is";
   homeHeading1 = 'Divyashree Iyer.';
   homeHeading2 = 'I love programming, writing, traveling and binge watching shows.';
-  homeContent = "I'm a software engineer specializing in building exceptional digital experiences. Currently, I'm working as an Angular Developer at Matchbook AI.";
+  homeContent = "I'm a software engineer specializing in building exceptional digital experiences. Currently, I'm seeking full-time SDE opportunities.";
   
 }

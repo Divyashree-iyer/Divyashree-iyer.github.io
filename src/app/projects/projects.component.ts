@@ -11,24 +11,87 @@ import { CommonModule } from '@angular/common';
 export class ProjectsComponent implements OnInit {
 
   ngOnInit() {
+    this.displayCount = 3;
+    this.updateDisplay();
     this.displayDetails = this.projectsDetails.slice(0,3)
+  }
+  
+  updateDisplay() {
+    this.displayDetails = this.projectsDetails.slice(0, this.displayCount);
   }
 
   showMore(){
     if (this.displayDetails.length < this.projectsDetails.length){
-      this.displayDetails = this.projectsDetails;
-      this.btnText = 'Show Less'
+      this.displayCount += 3;
+      if (this.displayCount >= this.projectsDetails.length) {
+        this.displayCount = this.projectsDetails.length;
+        this.btnText = 'Show Less';
+      }
     }
     else{
+      this.displayCount = 3;
       this.btnText = 'Show More';
-      this.displayDetails = this.projectsDetails.slice(0,3)
-
     }
+    this.updateDisplay();
   }
 
+  displayCount = 3;
   btnText = 'Show More';
   displayDetails:any;
   projectsDetails = [
+    {
+      name: "Personalized Curriculum Builder",
+      description: "Fine-tuned LLM (Gemini) through prompt engineering to generate personalized curriculum for women in STEM. Built using React for the front-end and Django for the back-end. ",
+      mainTech: [
+        "Django",
+        "Gemini",
+        "Artificial Intelligence",
+        "React.js",
+        "Large Language Models"
+      ],
+      githubLink:""
+    },
+    {
+      name: "Home Decor Business Analysis - Data Processing at Scale",
+      description: "Used Apache Spark, Spark SQL, and Python to analyze Yelp data with Parquet, perform sentiment analysis, and visualize trends—extracting insights to support business decisions in the Home Decor domain.",
+      mainTech: [
+        "Matplotlib",
+        "Seaborn",
+        "Apache Spark",
+        "PostgreSQL"
+      ],
+      githubLink:""
+    },
+    {
+      name: "AI-Powered Health ChatBot",
+      description: "Built a Django-based health chatbot with Gemini API via Langchain/LangGraph for entity extraction, using PostgreSQL and Neo4j to manage patient data and knowledge graphs for intelligent, responsive conversations.",
+      mainTech: [
+        "Django",
+        "Neo4j",
+        "LangChain",
+        "PostgreSQL"
+      ],
+      githubLink:""
+    },
+    {
+      name: "PII Data Detection ‑ Kaggle Competition",
+      description: "Used DeBERTa v2 to detect PII with 99.43% accuracy, outperforming Microsoft Presidio on educational data with higher F5 (0.798) and precision (0.846) in a comparative evaluation.",
+      mainTech: [
+        "Python",
+        "Data Mining",
+        "Machine Learning"
+      ],
+      githubLink:""
+    },
+    {
+      name: "Retail Website Prototype",
+      description: "Led UX redesign for a retail website, reducing task time by 45% and boosting satisfaction by 82%. Designed filters, chatbot, FAQ, and created prototypes using Axure and Figma.",
+      mainTech: [
+        "Axure",
+        "Figma"
+      ],
+      githubLink:""
+    },
     {
       name: "Dynamic Web page Builder",
       description: "Worked in a team of two to develop, test, debug and document a full stack web application ",

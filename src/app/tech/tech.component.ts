@@ -10,67 +10,100 @@ import { CommonModule } from '@angular/common';
 })
 export class TechComponent {
 
-  techDetails = [
+techDetails = [
     {
-      heading:"Core",
-      techs:[
+      heading: "Core",
+      techs: [
         "Software Engineering",
         "Competitive Programming",
-        "Data Structure",
-        "Database"
+        "Data Structures & Algorithms",
+        "Databases",
+        "Operating Systems",
+        "Distributed Systems"
       ]
     },
     {
-      heading:"Languages",
-      techs:[
+      heading: "Languages",
+      techs: [
         "C",
         "C++",
         "Java",
         "Python",
         "C#",
+        "JavaScript",
+        "TypeScript",
         "HTML",
         "CSS",
-        "Javascript",
         "SQL",
         "PL/SQL",
-        "Prolog",
-        "Assemply Language"
+        "Prolog"
       ]
     },
     {
-      heading:"Frameworks and Libraries",
-      techs:[
-        "React JS",
-        "Node JS",
+      heading: "Frameworks & Libraries",
+      techs: [
+        "React.js",
         "Angular",
-        "Angular JS",
+        "AngularJS",
+        "Node.js",
+        "Express.js",
         "jQuery",
-        "Express JS",
         "AJAX",
         "Bootstrap",
         "Spring Boot",
         "Spring MVC",
         "JSP",
         "Servlets",
-        ".Net",
-        "Hibernate"
+        ".NET",
+        "Hibernate",
+        "LangChain",
+        "LangGraph",
+        "Scikit-learn",
+        "Pandas",
+        "NumPy",
+        "Matplotlib",
+        "Seaborn",
+        "Gensim",
+        "SMOTE"
       ]
     },
     {
-      heading:"Tools",
-      techs:[
-        "Linux",
-        "VS Code",
-        "Git",
-        "Github",
-        "Anaconda",
+      heading: "Databases",
+      techs: [
         "MySQL",
+        "PostgreSQL",
         "MongoDB",
-        "Netbeans",
-        "Eclipse",
-        "Spyder",
-        "OracleSQL"
+        "Oracle SQL",
+        "SQLite",
+        "Neo4j"
       ]
     },
-  ]
+    {
+      heading: "Cloud & DevOps",
+      techs: [
+        "AWS EC2",
+        "AWS Lambda",
+        "AWS S3",
+        "AWS IoT Greengrass",
+        "AWS SQS",
+        "Docker",
+        "GitHub Actions"
+      ]
+    },
+    {
+      heading: "Tools",
+      techs: [
+        "Git",
+        "GitHub",
+        "Postman",
+        "Anaconda",
+        "VS Code",
+        "Eclipse",
+        "NetBeans",
+        "Linux",
+        "Figma",
+        "Axure"
+      ]
+    }
+  ];
 }
