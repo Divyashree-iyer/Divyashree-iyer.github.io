@@ -26,7 +26,7 @@ export class WorkComponent {
     {
       id: '2',
       name: 'Matchbook AI',
-      position: 'Angular Developer',
+      position: 'Software Engineer',
       duration: 'June 2022 - July 2023',
       description: [
         "Responsible for building modular, testable and reusable frontend modules for SPA using Angular 15.",
@@ -52,7 +52,7 @@ export class WorkComponent {
     {
       id: '4',
       name: 'SAC, ISRO',
-      position: 'Software Inter',
+      position: 'Software Developer Intern',
       duration: 'June 2021- August 2021',
       description: [
         "The Indent and Budget Management System for SAC aims at computerizing the workflow to reduce manual efforts and remote data storage.",

@@ -20,14 +20,14 @@ export class EducationComponent {
       name: 'Arizona State University',
       location: 'AZ, USA',
       degree: 'Master of Computer Science',
-      marks: '3.67/4.0'
+      marks: ''
     },
     {
       duration: 'July 2018 - May 2022',
       name: 'Dharmsinh Desai University',
       location: 'India',
       degree: 'Bachelor of Technology in Information Technology',
-      marks: '3.28/4.0'
+      marks: ''
     },
     {
       duration: 'March, 2018',
